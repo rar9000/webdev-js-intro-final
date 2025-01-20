@@ -12,6 +12,7 @@
                 <h1 class="game-title">Guess the Number</h1>
                 <p class="game-message">
                     Try to guess the computer's number within 3 tries!
+                    Guess between 1-10
                 </p>
                 <input
                     class="number-input"
@@ -19,6 +20,9 @@
                     name=""
                     id="guess-input"
                     placeholder="Enter Number"
+                    min = "1"
+                    max = "10"
+                    required
                 />
 
                 <div class="guess-container">
@@ -32,6 +36,10 @@
                     <p class="text">
                         Guess History: <span id="guess-history"></span>
                     </p>
+                    <p class="text">
+                        Guesses Left: <span id="guesses-left"></span>
+                    </p>
+
                 </div>
 
                 <div class="btn-container">
